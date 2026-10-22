@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "rag-kb": {
+      "command": "E:\\RAG-KnowledgeBase\\.venv\\Scripts\\python.exe",
+      "args": ["E:\\RAG-KnowledgeBase\\src\\agent\\mcp_server.py"],
+      "env": {
+        "RAG_KB_URL": "http://127.0.0.1:8000"
+      }
+    }
+  }
+}

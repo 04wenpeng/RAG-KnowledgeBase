@@ -1,0 +1,23 @@
+{
+  "type": "function",
+  "function": {
+    "name": "query_knowledge_base",
+    "description": "在本地 RAG 知识库中检索并回答。适用于公司内部资料、产品文档、课件等知识库中可能存在的内容。知识库里没有时会明确说无法回答，不会编造。",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "question": {
+          "type": "string",
+          "description": "用户的完整问题，保留原话中的关键名词"
+        },
+        "top_k": {
+          "type": "integer",
+          "description": "召回片段数量，默认 4",
+          "minimum": 1,
+          "maximum": 10
+        }
+      },
+      "required": ["question"]
+    }
+  }
+}

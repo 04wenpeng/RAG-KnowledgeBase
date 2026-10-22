@@ -1,0 +1,47 @@
+# ---------- Python 虚拟环境 / 缓存 ----------
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# ---------- 本地大文件 / 依赖 / 向量库 ----------
+models/
+ollama/
+store/
+dist/
+build/
+backups/
+
+# ---------- 用户私有资料 ----------
+data/
+dev-data/
+
+# ---------- 密钥与运行时状态（勿提交） ----------
+.env
+config/llm_profiles.json
+config/access.json
+config/external_sources.json
+config/chats/
+config/c_*.json
+
+# ---------- 日志 ----------
+*.log
+server.log
+
+# ---------- 编辑器 / 系统 ----------
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ---------- 压缩包 ----------
+*.zip
+*.7z
+*.rar
+
+# ---------- 旧历史备份 ----------
+.git-old-*/

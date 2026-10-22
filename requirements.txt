@@ -1,0 +1,13 @@
+# RAG 知识库依赖（已安装在 .venv 里）
+# 重装命令： .venv\Scripts\python.exe -m pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+langchain
+langchain-community
+langchain-chroma
+langchain-classic
+langchain-text-splitters
+chromadb
+dashscope
+pypdf
+python-docx
+openpyxl
+python-dotenv
