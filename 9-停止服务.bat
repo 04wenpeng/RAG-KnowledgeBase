@@ -3,9 +3,9 @@ chcp 65001 >nul
 cd /d "%~dp0"
 set PYTHONIOENCODING=utf-8
 if exist ".venv\Scripts\python.exe" (
-  ".venv\Scripts\python.exe" src\tools\service_task.py stop
+  ".venv\Scripts\python.exe" src\tools\stop_daemon.py 8000
 ) else (
-  python src\tools\service_task.py stop
+  python src\tools\stop_daemon.py 8000
 )
 echo.
 pause

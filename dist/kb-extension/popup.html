@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<title>RAG 知识库</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<header>
+  <span class="logo"></span>
+  <b>RAG 知识库</b>
+  <button id="gear" title="设置地址">⚙</button>
+</header>
+
+<div id="settings" class="settings hidden">
+  <label>知识库地址</label>
+  <input id="url" placeholder="http://127.0.0.1:8000" spellcheck="false">
+  <div class="row">
+    <span class="hint" id="state">—</span>
+    <button id="save" class="primary">保存并测试</button>
+  </div>
+</div>
+
+<div class="composer">
+  <input id="q" placeholder="输入问题，回车查询…" autocomplete="off" autofocus>
+  <button id="go" class="primary">查询</button>
+</div>
+
+<div class="opts">
+  <label><input id="mode" type="checkbox" checked> 用大模型生成</label>
+  <label>Top-K <input id="k" type="number" min="1" max="10" value="4"></label>
+</div>
+
+<main id="out">
+  <p class="empty">问点什么吧。答案会标出来源文件与页码。</p>
+</main>
+
+<footer>只读：本插件只能查询，不能改动知识库</footer>
+<script src="popup.js"></script>
+</body></html>

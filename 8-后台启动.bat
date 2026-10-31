@@ -3,12 +3,10 @@ chcp 65001 >nul
 cd /d "%~dp0"
 set PYTHONIOENCODING=utf-8
 if exist ".venv\Scripts\python.exe" (
-  ".venv\Scripts\python.exe" src\tools\service_task.py start
+  ".venv\Scripts\python.exe" src\tools\start_daemon.py 8000
 ) else (
-  python src\tools\service_task.py start
+  python src\tools\start_daemon.py 8000
 )
-if exist "http://127.0.0.1:8000/" (
-  start "" "http://127.0.0.1:8000/"
-)
+start "" "http://127.0.0.1:8000/"
 echo.
 pause

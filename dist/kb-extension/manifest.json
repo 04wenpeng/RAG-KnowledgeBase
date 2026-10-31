@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "RAG 知识库",
+  "version": "1.0.0",
+  "description": "在浏览器里直接问你的本地 RAG 知识库，答案带出处",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "RAG 知识库"
+  },
+  "permissions": ["storage"],
+  "host_permissions": [
+    "http://127.0.0.1/*",
+    "http://localhost/*",
+    "http://172.22.124.143/*",
+    "http://26.94.195.90/*"
+  ]
+}
